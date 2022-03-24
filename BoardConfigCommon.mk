@@ -6,9 +6,6 @@
 
 COMMON_PATH := device/xiaomi/sdm439-common
 
-# APEX
-OVERRIDE_TARGET_FLATTEN_APEX := true
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -21,6 +18,7 @@ TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
+DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Build
 BUILD_BROKEN_DUP_RULES := true
@@ -45,9 +43,6 @@ TARGET_KERNEL_CLANG_COMPILE := true
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
-
-# Apex
-OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # Audio
 AUDIO_FEATURE_ENABLED_ANC_HEADSET := true
